@@ -9,10 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "eslint": "8.47.0",
-    "eslint-config-next": "13.4.15",
+    "@emotion/cache": "^11.11.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/server": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.3",
+    "@mui/material": "^5.14.5",
+    "@mui/styled-engine-sc": "^5.12.0",
+    "axios": "^1.4.0",
+    "mui-image": "^1.0.7",
     "next": "13.4.15",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "styled-components": "^6.0.7"
   }
 }
