@@ -7,12 +7,33 @@ import { useState, useEffect } from 'react';
 import styled from '@emotion/styled';
 
 const ProductCardList = ({ data }) => {
+  const [cartItems, setCartItems] = useState([]);
+
+  const addToCart = (product) => {
+    const exist = cartItems.find((x) => x.id === product.id);
+    if(exist){
+      const newCartItems = cartItems.map((x) =>
+      x.id === product.id? { ...exist, qty: exist.qty + 1} : x
+      );
+      setCartItems(newCartItems);
+    }else{
+      const newCartItems = [...cartItems, { ...product, qty: 1}];
+      setCartItems(newCartItems);
+    }
+  }
+
+  const removeToCart = (product) => {
+    
+  }
+
     return(
       <>
         {data.map((product) => (
           <ProductCardComponent 
             key={product.id}
             product={product}
+            addToCart={addToCart}
+            removeToCart={removeToCart}
           />
         ))}
       </>

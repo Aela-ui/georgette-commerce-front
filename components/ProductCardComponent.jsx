@@ -24,7 +24,7 @@ const style = {
 };
 
 
-export default function ProductCardComponent({ product }) {
+export default function ProductCardComponent({ product, addToCart, removeToCart }) {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -45,6 +45,7 @@ export default function ProductCardComponent({ product }) {
       <CardActions>
         <Typography size="small">${product.price}</Typography>
         <StyledButton onClick={handleOpen}>Comprar</StyledButton>
+        <StyledButton onClick={()=>addToCart(product)}>Adicionar</StyledButton>
           <Modal
             keepMounted
             open={open}
