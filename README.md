@@ -6,7 +6,7 @@ e inserir novos dados para testar
 
 ## Tecnologias
 Foi utilizado JS, React e Next no front.
-No backend foi utilizado nodejs, mongodb e axios.
+No backend foi utilizado nodejs, mongodb e express. <a href="https://github.com/Aela-ui/back-georgette-commerce">Backend</a> 
 
 ![image](https://github.com/user-attachments/assets/30ee6acb-ae95-4d6b-a77c-b3628c6a632a)
 
